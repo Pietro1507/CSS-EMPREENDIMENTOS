@@ -1,0 +1,36 @@
+{
+  "imoveis": [
+    {
+      "nome":"Residencial Pretória II",
+      "localizacao": "Rua Pretória, 1203 - Vila Formosa -SP",
+      "imagem": "http://www.cssempreendimentos.com.br/wa_1_p/pa_253j8w70xqg13nm/big_Frente_20Compacto.jpg?2dn8xkrksqbgu2",
+      "dormitorios": "1 dorm",
+      "tamanho": "33 á 37 m²",
+      "aptos": "9 aptos",
+      "status": "Vendido",
+      "link": "pretoriaII.html"
+    },
+    {
+      "nome":"Residencial Maria Martinelli",
+      "localizacao": "Rua Pretória, 1201 - Vila Formosa -SP",
+      "imagem": "http://www.cssempreendimentos.com.br/wa_5_p/pa_2vl1io79zf8irit/big_Perspec0.jpg?25wjrkrksqbgvd",
+      "dormitorios": "1 dorm",
+      "tamanho": "26 m²",
+      "aptos": "12 aptos",
+      "status": "Vendido",
+      "link": "pretoriaI.html"
+    },
+    {
+      "nome":"Residencial Novo Horizonte",
+      "localizacao": "Rua Tanganica, 127 - Vila Formosa -SP",
+      "imagem": "/img/WhatsApp Image 2023-11-13 at 16.40.25 (14).jpeg",
+      "dormitorios": "1 dorm",
+      "tamanho": "33 á 44 m²",
+      "aptos": "9 aptos",
+      "status": "Pronta-entrega",
+      "link": "novohorizonte.html"
+    }
+    
+    
+  ]
+}
