@@ -14,7 +14,7 @@ fetch(url)
                                 <div class = content-card>
                                 <h1 class= h1-card> ${imovel.nome}</h1>
                                 <p class = info-card> ${imovel.localizacao}</p>
-                                <span> ${imovel.aptos} | ${imovel.dormitorios} | ${imovel.tamanho}</span>
+                                <span class = "num-card"> ${imovel.aptos} | ${imovel.dormitorios} | ${imovel.tamanho}</span>
                                 <a href="../html/${imovel.link}" class = button> Ver Mais </a>
                                 </div>
                                 </article> `}
@@ -27,27 +27,46 @@ fetch(url)
                                 <div class = content-card>
                                 <h1 class= h1-card> ${imovel.nome}</h1>
                                 <p class = info-card> ${imovel.localizacao}</p>
-                                <span> ${imovel.aptos} | ${imovel.dormitorios} | ${imovel.tamanho}</span>
+                                <span class= "num-card"> ${imovel.aptos} | ${imovel.dormitorios} | ${imovel.tamanho}</span>
                                 <a href="../html/${imovel.link}" class = button> Ver Mais </a>
                                 </div>
                                 </article> `
             }
-            let count = 1;
-document.getElementById("radio1").checked = true;
+        
+            let slides = document.querySelectorAll('.slide-container');
+            let index = 0;
+            
+            function next(){
+                slides[index].classList.remove('active');
+                index = (index + 1) % slides.length;
+                slides[index].classList.add('active');
+            }
+            
+            function prev(){
+                slides[index].classList.remove('active');
+                index = (index - 1 + slides.length) % slides.length;
+                slides[index].classList.add('active');
+            }
+            document.querySelector('#prev').addEventListener('click', prev)
+            document.querySelector('#next').addEventListener('click', next)
+            
+            setInterval(next, 10000);
 
-setInterval( function(){
-    nextImage();
-}, 5000)
-
-function nextImage(){
-    count++;
-    if(count>4){
-        count = 1;
-    }
-
-    document.getElementById("radio"+count).checked = true;
-}
-
+            let btnSanduiche = document.querySelector('.btn-sanduiche')
+            btnSanduiche.addEventListener('click', () => {               
+                let logo = document.querySelector('.logo')
+                let menuMobile = document.querySelector('.menu-mobile')
+                menuMobile.classList.toggle('ativo')
+                if(menuMobile.classList.contains('ativo')){
+                    logo.style.display = 'none'
+                    btnSanduiche.src = '../img/fechar.png'
+                }
+                else{
+                    logo.style.display = 'block'
+                    btnSanduiche.src = '../img/pngegg.png'
+                }
+            })
+            
 
 
 

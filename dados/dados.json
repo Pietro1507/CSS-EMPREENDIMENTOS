@@ -3,7 +3,7 @@
     {
       "nome":"Residencial Pretória II",
       "localizacao": "Rua Pretória, 1203 - Vila Formosa -SP",
-      "imagem": "http://www.cssempreendimentos.com.br/wa_1_p/pa_253j8w70xqg13nm/big_Frente_20Compacto.jpg?2dn8xkrksqbgu2",
+      "imagem": "/Pretoria II/big_Frente_20Compacto.jpg",
       "dormitorios": "1 dorm",
       "tamanho": "33 á 37 m²",
       "aptos": "9 aptos",
@@ -13,7 +13,7 @@
     {
       "nome":"Residencial Maria Martinelli",
       "localizacao": "Rua Pretória, 1201 - Vila Formosa -SP",
-      "imagem": "http://www.cssempreendimentos.com.br/wa_5_p/pa_2vl1io79zf8irit/big_Perspec0.jpg?25wjrkrksqbgvd",
+      "imagem": "/Maria Martinelli/big_Perspec0.jpg",
       "dormitorios": "1 dorm",
       "tamanho": "26 m²",
       "aptos": "12 aptos",
